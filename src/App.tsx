@@ -25,31 +25,32 @@ function App() {
                 <span className="text-[#00602B]">Mate</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                SafeMate est l'application solidaire de prévention du harcèlement de rue, pensée par et pour les femmes. Une communauté bienveillante qui vous accompagne au quotidien.
+              SafeMate agit pour que chaque femme puisse se sentir libre et en sécurité dans l’espace public, tout en faisant rayonner les combats féministes.
+
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-[#00602B] text-white px-8 py-4 rounded-full font-medium hover:bg-[#004d22] transition-colors flex items-center justify-center space-x-2">
-                  <Play className="w-5 h-5" />
-                  <span>Découvrir l'app</span>
-                </button>
+
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="border-2 border-[#00602B] text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-[#00602B] hover:text-white transition-colors flex items-center justify-center">
-                    <AppleIcon className="w-6 h-6" />
-                  </button>
-                  <button className="border-2 border-[#00602B] text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-[#00602B] hover:text-white transition-colors flex items-center justify-center">
-                    <GooglePlayIcon className="w-6 h-6" />
-                  </button>
+   
+     
                 </div>
               </div>
             </div>
-            
-            <div className="relative">
-              <img 
-                src="https://images.pexels.com/photos/8733493/pexels-photo-8733493.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                alt="Quatre femmes marchant ensemble sur un trottoir"
-                className="rounded-2xl shadow-xl w-full object-cover h-96"
-              />
-            </div>
+
+            <div className="relative flex justify-center">
+  <div
+    className="rounded-full shadow-xl bg-white border-4 border-gray-100"
+    style={{
+      backgroundImage: 'url(/logo.png)',
+      backgroundSize: 'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      width: '300px',
+      height: '300px',
+    }}
+  />
+</div>
+
           </div>
         </div>
       </section>
@@ -59,53 +60,45 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Des <span className="text-[#00602B]">fonctionnalités</span> pensées pour votre sécurité
+            Ensemble pour la <span className="text-[#00602B]">liberté</span> et la <span className="text-[#00602B]">sécurité</span>  des femmes
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              SafeMate combine technologie et solidarité pour créer un environnement plus sûr pour toutes les femmes.
+            SafeMate est une association qui transforme la peur en force collective et bâtit une société plus égalitaire, respectueuse et bienveillante.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-[#00602B]" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Trajets entre femmes</h3>
-              <p className="text-gray-600">
-                Trouvez des partenaires de trajet fiables dans votre zone
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <AlertTriangle className="w-8 h-8 text-[#00602B]" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Alertes géolocalisées</h3>
-              <p className="text-gray-600">
-                Recevez des alertes en temps réel sur les zones à risque
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <MessageCircle className="w-8 h-8 text-[#00602B]" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Chat sécurisé</h3>
-              <p className="text-gray-600">
-                Communiquez en sécurité avec d'autres femmes
-              </p>
-            </div>
-            
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-[#00602B]" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Communauté solidaire</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Sensibilisation & prévention</h3>
               <p className="text-gray-600">
-                Rejoignez une communauté bienveillante et solidaire
+              Campagnes, ateliers et événements pour lutter contre le harcèlement de rue et promouvoir l’égalité.
               </p>
             </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Users className="w-8 h-8 text-[#00602B]" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Communauté solidaire</h3>
+              <p className="text-gray-600">
+              Créer des espaces d’entraide et d’échanges entre femmes pour renforcer la sororité au quotidien.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <Heart className="w-8 h-8 text-[#00602B]" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Soutien aux associations</h3>
+              <p className="text-gray-600">
+              Donner de la visibilité aux initiatives féministes et faciliter la mise en lien avec le public.
+              </p>
+            </div>
+            
+            
           </div>
           
           <div className="text-center mt-12">
@@ -113,69 +106,43 @@ function App() {
               onClick={() => setCurrentPage('fonctionnalites')}
               className="text-[#00602B] font-medium hover:text-[#004d22] transition-colors flex items-center space-x-2 mx-auto"
             >
-              <span>Découvrir toutes les fonctionnalités</span>
+              <span>Découvrir nos projets</span>
               <span>→</span>
             </button>
           </div>
         </div>
       </section>
 
-      {/* Why SafeMate Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Pourquoi SafeMate ?</h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Notre mission est de créer un monde où chaque femme peut se déplacer en toute sécurité, soutenue par une communauté bienveillante.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
-              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-[#00602B]" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Sororité</h3>
-              <p className="text-gray-600">
-                Une communauté de femmes qui se soutiennent mutuellement
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
-              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-8 h-8 text-[#00602B]" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Prévention</h3>
-              <p className="text-gray-600">
-                Des outils pour anticiper et éviter les situations dangereuses
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-2xl shadow-sm text-center">
-              <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Zap className="w-8 h-8 text-[#00602B]" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Réaction immédiate</h3>
-              <p className="text-gray-600">
-                Des solutions rapides pour agir en cas d'urgence
-              </p>
-            </div>
-          </div>
-          
-          <div className="bg-[#00602B] rounded-3xl p-12 text-center text-white">
+   
+     {/* Why SafeMate Section */}
+<section className="bg-gray-50 py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold text-gray-900 mb-6">Pourquoi SafeMate ?</h2>
+      <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+        Notre mission est de créer un monde où chaque femme peut se déplacer en toute sécurité, 
+        soutenue par une communauté bienveillante.
+      </p>
+    </div>
+
+    {/* Image à la place des 3 cartes */}
+    <div className="relative mb-8">  {/* espace de 32px sous l’image */}
+      <img
+        src="/imagesfilles.jpg"
+        alt="Femmes solidaires SafeMate"
+        className="rounded-2xl shadow-xl w-full object-cover h-96"
+      />
+    </div>
+  
+    <div className="bg-[#00602B] rounded-3xl px-8 py-6 text-center text-white">
             <h3 className="text-3xl font-bold mb-6">
               Prête à rejoindre la communauté SafeMate ?
             </h3>
             <p className="text-xl mb-8 opacity-90">
-              Téléchargez l'application gratuitement et découvrez comment nous pouvons vous accompagner dans vos déplacements quotidiens.
+            Rejoignez un réseau de femmes solidaires qui agissent ensemble pour un espace public plus sûr et plus juste.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <AppleIcon className="w-6 h-6" />
-              </button>
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <GooglePlayIcon className="w-6 h-6" />
-              </button>
+
             </div>
           </div>
         </div>
@@ -190,10 +157,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              L'app <span className="text-[#00602B]">SafeMate</span>
+              L'asso <span className="text-[#00602B]">SafeMate</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Née d'un constat alarmant et d'une volonté de changement, SafeMate est bien plus qu'une application : c'est un mouvement de solidarité féminine pour un monde plus sûr.
+            SafeMate est née d’un constat urgent et d’une envie commune de faire bouger les lignes : une association qui agit ensemble, avec et pour les femmes, pour reconquérir l’espace public.
             </p>
           </div>
         </div>
@@ -224,10 +191,7 @@ function App() {
                 alt="Quatre femmes bavardant assises sur un banc"
                 className="rounded-2xl shadow-xl w-full object-cover h-96"
               />
-              <div className="absolute -right-6 -bottom-6 bg-[#00602B] text-white px-8 py-6 rounded-xl shadow-lg max-w-xs">
-                <div className="text-3xl font-bold mb-2">85%</div>
-                <div className="text-sm opacity-90 leading-tight">des femmes ont déjà été harcelées dans l'espace public</div>
-              </div>
+
             </div>
           </div>
         </div>
@@ -243,37 +207,7 @@ function App() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-10 h-10 text-[#00602B]" />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Prévenir</h3>
-              <p className="text-gray-600">
-                Anticiper les situations dangereuses grâce à l'intelligence collective
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Users className="w-10 h-10 text-[#00602B]" />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Connecter</h3>
-              <p className="text-gray-600">
-                Rassembler les femmes dans une communauté solidaire et bienveillante
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-20 h-20 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Zap className="w-10 h-10 text-[#00602B]" />
-              </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Réagir</h3>
-              <p className="text-gray-600">
-                Fournir des outils de réaction rapide en cas de situation d'urgence
-              </p>
-            </div>
-          </div>
+ 
         </div>
       </section>
 
@@ -289,42 +223,50 @@ function App() {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-8 rounded-2xl shadow-sm flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#00602B] bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Shield className="w-6 h-6 text-[#00602B]" />
+            <div className="flex items-center justify-center flex-shrink-0">
+              <div className="w-6 h-6 rounded-full bg-[#00602B] flex items-center justify-center">
+  <span className="w-2 h-2 rounded-full bg-white"></span>
+</div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Sécurité</h3>
-                <p className="text-gray-600">Protection des données et confidentialité absolue</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Solidarité</h3>
+                <p className="text-gray-600">S’élever ensemble dans l’écoute, l’entraide et le respect.</p>
               </div>
             </div>
             
             <div className="bg-white p-8 rounded-2xl shadow-sm flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#00602B] bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Heart className="w-6 h-6 text-[#00602B]" />
+            <div className="flex items-center justify-center flex-shrink-0">
+            <div className="w-6 h-6 rounded-full bg-[#00602B] flex items-center justify-center">
+  <span className="w-2 h-2 rounded-full bg-white"></span>
+</div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Bienveillance</h3>
-                <p className="text-gray-600">Une communauté basée sur l'entraide et le respect</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Écoute</h3>
+                <p className="text-gray-600">Chaque parole compte, chaque vécu est entendu.</p>
               </div>
             </div>
             
             <div className="bg-white p-8 rounded-2xl shadow-sm flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#00602B] bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Eye className="w-6 h-6 text-[#00602B]" />
+            <div className="flex items-center justify-center flex-shrink-0">
+            <div className="w-6 h-6 rounded-full bg-[#00602B] flex items-center justify-center">
+  <span className="w-2 h-2 rounded-full bg-white"></span>
+</div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Anonymat</h3>
-                <p className="text-gray-600">Votre identité reste protégée en toutes circonstances</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Engagement</h3>
+                <p className="text-gray-600">Porter nos convictions dans chaque action concrète.</p>
               </div>
             </div>
             
             <div className="bg-white p-8 rounded-2xl shadow-sm flex items-start space-x-4">
-              <div className="w-12 h-12 bg-[#00602B] bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
-                <Zap className="w-6 h-6 text-[#00602B]" />
+            <div className="flex items-center justify-center flex-shrink-0">
+            <div className="w-6 h-6 rounded-full bg-[#00602B] flex items-center justify-center">
+  <span className="w-2 h-2 rounded-full bg-white"></span>
+</div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Empowerment</h3>
-                <p className="text-gray-600">Donner aux femmes les outils pour reprendre le contrôle</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">Sensibilisation</h3>
+                <p className="text-gray-600">Faire émerger une prise de conscience collective.</p>
               </div>
             </div>
           </div>
@@ -337,7 +279,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">L'équipe SafeMate</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Une équipe pluridisciplinaire unie par la même vision : créer un impact positif dans la vie des femmes.
+              Une équipe de femmes et d'alliés unie par la même vision : créer un impact positif dans la vie des femmes.
             </p>
           </div>
           
@@ -393,28 +335,25 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#00602B] rounded-3xl p-12 text-center text-white">
+      <section className="py-20 mt-12">
+      + <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#00602B] rounded-3xl px-8 py-6 text-center text-white">
             <h2 className="text-3xl font-bold mb-6">
               Prête à rejoindre la communauté SafeMate ?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Téléchargez l'application gratuitement et découvrez comment nous pouvons vous accompagner dans vos déplacements quotidiens.
+            Rejoignez un réseau de femmes solidaires qui agissent ensemble pour un espace public plus sûr et plus juste.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <AppleIcon className="w-6 h-6" />
-              </button>
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <GooglePlayIcon className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </div>
       </section>
     </>
   );
+
+
+
 
   const renderFonctionnalites = () => (
     <>
@@ -423,7 +362,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Fonctionnalités <span className="text-[#00602B]">SafeMate</span>
+              Fonctionnalités <span className="text-[#00602B]">SafeMate App</span>
             </h1>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Découvrez tous les outils que SafeMate met à votre disposition pour vous accompagner au quotidien et renforcer votre sécurité.
@@ -436,9 +375,9 @@ function App() {
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Fonctionnalités disponibles</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6"> Se déplacer en sécurité, en toute confiance.</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Ces outils sont déjà opérationnels et prêts à vous accompagner dans vos déplacements.
+              Des outils pour vous accompagner au quotidien. 
             </p>
           </div>
 
@@ -471,14 +410,13 @@ function App() {
                 </li>
               </ul>
             </div>
-            
-            <div className="relative">
-              <img 
-                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Interface de l'application SafeMate"
-                className="rounded-2xl shadow-xl w-full max-w-sm mx-auto"
-              />
-            </div>
+            <div className="relative mx-auto overflow-hidden">
+  <img 
+    src="/img_partenaires.png" 
+    alt="Interface de l'application SafeMate"
+    className="h-auto max-w-[1000px] mx-auto transition-transform duration-300 hover:scale-105"
+  />
+</div>
           </div>
 
           {/* Alertes géolocalisées */}
@@ -511,11 +449,13 @@ function App() {
               </ul>
             </div>
             
-            <div className="lg:order-1 bg-gray-200 rounded-2xl p-16 flex items-center justify-center">
-              <div className="w-32 h-32 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center">
-                <AlertTriangle className="w-16 h-16 text-[#00602B]" />
-              </div>
-            </div>
+            <div className="lg:order-1 flex items-center justify-center">
+  <img
+    src="/imgalerte.png"
+    alt="Interface de l'application SafeMate"
+   className="h-auto max-w-[1000px] mx-auto transition-transform duration-300 hover:scale-105"
+  />
+</div>
           </div>
 
           {/* Signalement de zones à risque */}
@@ -548,22 +488,24 @@ function App() {
               </ul>
             </div>
             
-            <div className="bg-gray-200 rounded-2xl p-16 flex items-center justify-center">
-              <div className="w-32 h-32 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center">
-                <MapPin className="w-16 h-16 text-[#00602B]" />
-              </div>
-            </div>
+            <div className="lg:order-1 flex items-center justify-center">
+  <img
+    src="/img_map.png"
+    alt="Interface de l'application SafeMate"
+   className="h-auto max-w-[1000px] mx-auto transition-transform duration-300 hover:scale-105"
+  />
+</div>
           </div>
 
-          {/* Chat sécurisé */}
+          {/* Réseau social entre femmes */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="lg:order-2">
               <div className="w-16 h-16 bg-[#00602B] bg-opacity-20 rounded-2xl flex items-center justify-center mb-6">
                 <MessageCircle className="w-8 h-8 text-[#00602B]" />
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-6">Chat sécurisé entre femmes</h3>
+              <h3 className="text-3xl font-bold text-gray-900 mb-6">Réseau social entre femmes</h3>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Communiquez avec d'autres femmes de votre région dans un environnement bienveillant et sécurisé.
+              Rejoignez une communauté engagée, bienveillante et féminine.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center space-x-3">
@@ -572,7 +514,7 @@ function App() {
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#00602B] rounded-full"></div>
-                  <span className="text-gray-600">Groupes par zone géographique</span>
+                  <span className="text-gray-600">Échanges avec des associations partenaires</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#00602B] rounded-full"></div>
@@ -580,16 +522,18 @@ function App() {
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-[#00602B] rounded-full"></div>
-                  <span className="text-gray-600">Signalement facilité</span>
+                  <span className="text-gray-600">Signalement rapide et anonyme</span>
                 </li>
               </ul>
             </div>
             
-            <div className="lg:order-1 bg-gray-200 rounded-2xl p-16 flex items-center justify-center">
-              <div className="w-32 h-32 bg-[#00602B] bg-opacity-20 rounded-full flex items-center justify-center">
-                <MessageCircle className="w-16 h-16 text-[#00602B]" />
-              </div>
-            </div>
+            <div className="lg:order-1 flex items-center justify-center">
+  <img
+    src="/img_fil_actualite.png"
+    alt="Interface de l'application SafeMate"
+   className="h-auto max-w-[1000px] mx-auto transition-transform duration-300 hover:scale-105"
+  />
+</div>
           </div>
         </div>
       </section>
@@ -611,7 +555,7 @@ function App() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Chiffrement end-to-end</h3>
               <p className="text-gray-600">
-                Toutes vos communications sont protégées par un chiffrement de niveau militaire.
+                Toutes vos communications sont protégées par un chiffrement.
               </p>
             </div>
             
@@ -692,23 +636,17 @@ function App() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#00602B] rounded-3xl p-12 text-center text-white">
+       {/* CTA Section */}
+       <section className="py-20 mt-12">
+      + <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#00602B] rounded-3xl px-8 py-6 text-center text-white">
             <h2 className="text-3xl font-bold mb-6">
               Prête à rejoindre la communauté SafeMate ?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Téléchargez l'application gratuitement et découvrez comment nous pouvons vous accompagner dans vos déplacements quotidiens.
+            Rejoignez un réseau de femmes solidaires qui agissent ensemble pour un espace public plus sûr et plus juste.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <AppleIcon className="w-6 h-6" />
-              </button>
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <GooglePlayIcon className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </div>
@@ -1016,23 +954,17 @@ function App() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#00602B] rounded-3xl p-12 text-center text-white">
+       {/* CTA Section */}
+       <section className="py-20 mt-12">
+      + <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#00602B] rounded-3xl px-8 py-6 text-center text-white">
             <h2 className="text-3xl font-bold mb-6">
               Prête à rejoindre la communauté SafeMate ?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Téléchargez l'application gratuitement et découvrez comment nous pouvons vous accompagner dans vos déplacements quotidiens.
+            Rejoignez un réseau de femmes solidaires qui agissent ensemble pour un espace public plus sûr et plus juste.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <AppleIcon className="w-6 h-6" />
-              </button>
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <GooglePlayIcon className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </div>
@@ -1336,31 +1268,23 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#00602B] rounded-3xl p-12 text-center text-white">
+  {/* CTA Section */}
+  <section className="py-20 mt-12">
+      + <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#00602B] rounded-3xl px-8 py-6 text-center text-white">
             <h2 className="text-3xl font-bold mb-6">
               Prête à rejoindre la communauté SafeMate ?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Téléchargez l'application gratuitement et découvrez comment nous pouvons vous accompagner dans vos déplacements quotidiens.
+            Rejoignez un réseau de femmes solidaires qui agissent ensemble pour un espace public plus sûr et plus juste.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <AppleIcon className="w-6 h-6" />
-              </button>
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <GooglePlayIcon className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </div>
       </section>
     </>
   );
-
   const renderContact = () => (
     <>
       {/* Header Section */}
@@ -1572,7 +1496,7 @@ function App() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-[#00602B] text-white px-8 py-4 rounded-full font-medium hover:bg-[#004d22] transition-colors flex items-center justify-center space-x-2">
-                  <DollarSign className="w-5 h-5" />
+                  
                   <span>Nous faire un don</span>
                 </button>
                 <button className="border-2 border-[#00602B] text-[#00602B] px-8 py-4 rounded-full font-medium hover:bg-[#00602B] hover:text-white transition-colors">
@@ -1605,42 +1529,39 @@ function App() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#00602B] rounded-3xl p-12 text-center text-white">
+  {/* CTA Section */}
+  <section className="py-20 mt-12">
+      + <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#00602B] rounded-3xl px-8 py-6 text-center text-white">
             <h2 className="text-3xl font-bold mb-6">
               Prête à rejoindre la communauté SafeMate ?
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Téléchargez l'application gratuitement et découvrez comment nous pouvons vous accompagner dans vos déplacements quotidiens.
+            Rejoignez un réseau de femmes solidaires qui agissent ensemble pour un espace public plus sûr et plus juste.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <AppleIcon className="w-6 h-6" />
-              </button>
-              <button className="bg-white text-[#00602B] px-6 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center">
-                <GooglePlayIcon className="w-6 h-6" />
-              </button>
             </div>
           </div>
         </div>
       </section>
     </>
   );
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+        <div className="flex justify-around items-center py-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-[#00602B] rounded-lg flex items-center justify-center">
-                <Shield className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-semibold text-gray-900">SafeMate</span>
+            <div className="flex items-center space-x-2">
+            <img
+    src="/logo.png"
+    alt="Logo SafeMate"
+    className="w-10 h-10 rounded-full object-cover bg-white p-1 shadow-sm"
+  />
+  <span className="text-xl font-semibold text-gray-900">SafeMate</span>
+</div>
+      
             </div>
             
             <nav className="hidden md:flex items-center space-x-8">
@@ -1654,13 +1575,13 @@ function App() {
                 onClick={() => setCurrentPage('app-safemate')}
                 className={`transition-colors ${currentPage === 'app-safemate' ? 'text-[#00602B] font-medium' : 'text-gray-600 hover:text-[#00602B]'}`}
               >
-                L'app SafeMate
+                L'Asso SafeMate
               </button>
               <button 
                 onClick={() => setCurrentPage('fonctionnalites')}
                 className={`transition-colors ${currentPage === 'fonctionnalites' ? 'text-[#00602B] font-medium' : 'text-gray-600 hover:text-[#00602B]'}`}
               >
-                Fonctionnalités
+                Nos projets
               </button>
               <button 
                 onClick={() => setCurrentPage('conseils-ressources')}
@@ -1678,14 +1599,11 @@ function App() {
                 onClick={() => setCurrentPage('contact')}
                 className={`transition-colors ${currentPage === 'contact' ? 'text-[#00602B] font-medium' : 'text-gray-600 hover:text-[#00602B]'}`}
               >
-                Contact
+                Contact / Nous soutenir
               </button>
             </nav>
             
-            <button className="bg-[#00602B] text-white px-6 py-2 rounded-full font-medium hover:bg-[#004d22] transition-colors flex items-center space-x-2">
-              <Download className="w-4 h-4" />
-              <span>Télécharger l'app</span>
-            </button>
+
           </div>
         </div>
       </header>
@@ -1699,18 +1617,20 @@ function App() {
       {currentPage === 'contact' && renderContact()}
 
       {/* Footer */}
-      <footer className="bg-white border-t py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-[#00602B] rounded-lg flex items-center justify-center">
-                  <Shield className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-semibold text-gray-900">SafeMate</span>
-              </div>
-              <p className="text-gray-600">
-                L'application solidaire de prévention du harcèlement de rue, pensée par et pour les femmes.
+<footer className="bg-white border-t py-12">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid md:grid-cols-3 gap-8">
+      <div>
+        <div className="flex items-center space-x-2 mb-4">
+          <img
+            src="/logo.png"
+            alt="Logo SafeMate"
+            className="w-10 h-10 rounded-full object-cover bg-white p-1 shadow-sm"
+          />
+          <span className="text-xl font-semibold text-gray-900">SafeMate</span>
+        </div>
+        <p className="text-gray-600">
+        Une force collective pour visibiliser, soutenir et amplifier les combats féminins.
               </p>
             </div>
             
@@ -1730,7 +1650,7 @@ function App() {
                     onClick={() => setCurrentPage('app-safemate')}
                     className="text-gray-600 hover:text-[#00602B] transition-colors"
                   >
-                    L'app SafeMate
+                    L'Asso SafeMate
                   </button>
                 </li>
                 <li>
@@ -1738,7 +1658,7 @@ function App() {
                     onClick={() => setCurrentPage('fonctionnalites')}
                     className="text-gray-600 hover:text-[#00602B] transition-colors"
                   >
-                    Fonctionnalités
+                    Nos projets
                   </button>
                 </li>
                 <li>
@@ -1762,7 +1682,7 @@ function App() {
                     onClick={() => setCurrentPage('contact')}
                     className="text-gray-600 hover:text-[#00602B] transition-colors"
                   >
-                    Contact
+                    Contact / Nous soutenir
                   </button>
                 </li>
               </ul>
